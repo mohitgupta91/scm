@@ -1,0 +1,69 @@
+.controltower-breadcrumb {
+	font-size: 12px;
+    line-height: 29px;
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+    }
+    li {
+        height: 29px;
+        /*cursor: pointer;*/
+        cursor: default;
+        float: left;
+        padding:0 15px;
+        position: relative;
+        a {
+        	text-decoration: none;
+        	color: #333333;
+        	&:hover {
+        		color: #fb0229;
+        	}
+        }
+        &:hover, &.active{
+            /*color: #fb0229;*/
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 17px;
+            transform: rotate(135deg);
+            background: -moz-linear-gradient(top, rgba(155,155,155,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(155,155,155,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(155,155,155,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            left: 0;
+            top: 0;
+            -webkit-box-shadow:2px 0px 6px 0 rgba(155,155,155,0.15);
+            box-shadow:2px 0px 4px 0 rgba(155,155,155,0.15);
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 17px;
+            transform: rotate(45deg); /* FF3.6-15 */
+            background: -moz-linear-gradient(top, rgba(155,155,155,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(155,155,155,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(155,155,155,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            left: 0;
+            bottom: 0;
+            -webkit-box-shadow:-2px 0px 6px 0 rgba(155,155,155,0.15);
+            box-shadow:-2px 0px 4px 0 rgba(155,155,155,0.15);
+                        }
+        &:nth-child(1){
+            &:before{
+                content:none;
+            }
+            &:after{
+                content: none;
+            }
+        }
+    }  
+}
+
+
+
+
+

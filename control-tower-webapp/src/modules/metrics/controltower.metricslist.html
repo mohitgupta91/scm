@@ -1,0 +1,9 @@
+<!-- if(data.metricslist.length > 0) { -->
+	<ul>
+		<!-- _.each(data.metricslist, function(metric) { -->
+			<li><a jqr-go href="/controltower/{{data.module}}/{{data.submodule}}/{{metric.name}}">{{metric.label}}</a></li>
+		<!-- }) -->
+	</ul>
+<!-- } else { -->
+	<i>No result.</i>
+<!-- } -->

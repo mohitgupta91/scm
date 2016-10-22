@@ -1,0 +1,9 @@
+use scm; 
+db.poller_job.insert(
+   [
+     	{ "_class" : "com.snapdeal.scm.poller.model.Job", jobName: "PINCODE_DC_MAPPING", jobID: "2824/103", timestamp: 1460185451000, enabled: false, created: new Date(), updated: new Date() },
+     	{ "_class" : "com.snapdeal.scm.poller.model.Job", jobName: "ORIGIN_CITY_EXIT_MAPPING", jobID: "2824/104", timestamp: 1460185451000, enabled: false, created: new Date(), updated: new Date() },
+     	{ "_class" : "com.snapdeal.scm.poller.model.Job", jobName: "COURIER_LOCATION_SNAPDEAL_LOCATION_MAPPING", jobID: "2824/105", timestamp: 1460185451000, enabled: false, created: new Date(), updated: new Date() },
+     	
+   ]
+);

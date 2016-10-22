@@ -1,0 +1,14 @@
+<div class="controltower-createalert">
+    <div class="top-row">
+        <label class="inline-title">Alert Type:&nbsp;</label>
+        <jq-select2 class="select2-alert-Type" data-input="alertId" placeholder="Nothing selected" data-max-options="6" value="">
+            <option></option>
+            <!-- _.each(data.alerts, function(item) { -->
+                <option value="{{item.alertId}}">{{item.title}}</option>
+            <!-- }); -->
+        </jq-select2>
+        <div class="clear"></div>
+    </div>
+    <div class="create-alert-criteria">
+    </div>
+</div>

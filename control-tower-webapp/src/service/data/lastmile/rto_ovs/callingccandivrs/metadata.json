@@ -1,0 +1,85 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"requestValueType": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "CC Calls Count"
+			}, {
+				"title": "IVRS Calls Count"
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "cc",
+					"dataList": [],
+					"yAxis": 0
+				}, {
+					"type": "line",
+					"name": "ivrs",
+					"dataList": [],
+					"yAxis": 1
+				}
+			]
+		}
+	},
+	"TWO": {
+		"chart": {
+            "borderColor": "#ced7d6",
+            "borderWidth": 2,
+            "height": 260
+		},
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "cc",
+					"dataList": [],
+					"yAxis": 0
+				}, {
+					"type": "line",
+					"name": "ivrs",
+					"dataList": [],
+					"yAxis": 1
+				}
+			]
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "L1",
+			"id": "ONE"
+		}, {
+			"name": "L2",
+			"id": "TWO"
+		}
+	]
+}

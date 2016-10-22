@@ -1,0 +1,82 @@
+logging.config=classpath:logback-spring.xml
+logging.path=<%=@logging_path %>
+
+server.tomcat.accesslog.directory=<%=@logging_path%>
+server.tomcat.accesslog.enabled=true
+server.tomcat.accesslog.pattern=common
+server.tomcat.accesslog.prefix=access_log
+server.tomcat.accesslog.suffix=.log
+server.tomcat.basedir=.
+
+##JMS
+#tcp://localhost:61616
+spring.activemq.broker-url=<%=@spring_activemq_broker_url %>
+spring.activemq.user=<%=@spring_activemq_user%>
+spring.activemq.password=<%=@spring_activemq_password %>
+
+##LOG
+server.port=<%=@server_port %>
+
+##MONGODB (MongoProperties)
+spring.data.mongodb.repositories.enabled=true
+#mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+spring.data.mongodb.uri=<%=@spring_data_mongodb_uri %>
+
+#Disable security
+security.basic.enabled=false
+management.security.enabled=false
+
+#SCM Specific property
+
+#POLLER, PROCESSOR, FILEHANDLER : Not used any more
+
+scm.elastic.clustername=<%=@scm_elastic_clustername %>
+
+#Node client elastic cluster host registration with this ip, if not provided, will default to localhost
+scm.elastic.nodeclient.host=<%=@scm_elastic_nodeclient_host %>
+
+
+#done so that we can
+scm.elastic.path.home=${logging.path}/clientnode
+scm.elastic.host.port=<%=@scm_elastic_host_port %>
+scm.elastic.index.name=scm_master
+scm.elastic.index.name.type=suborder_details
+#5
+scm.elastic.retryonconflict=<%=@scm_elastic_retryonconflict %>
+
+#AWS S3 Storage
+amazon.s3.access.id=<%=@amazon_s3_access_id %>
+amazon.s3.secret.key=<%=@amazon_s3_secret_key %>
+amazon.s3.region=<%=@amazon_s3_region %>
+amazon.s3.url=<%=@amazon_s3_url %>
+
+#DateProcesserQueue
+#10
+filehandler.dto.batchsize=<%=@filehandler_dto_batchsize %>
+
+#date format for parsing
+allowed.date.formats=<%=@allowed_date_formats %>
+
+#cache reload
+auto.cache.reload.cron=<%=@auto_cache_reload_cron %>
+
+#ScmJmsProducer
+scm.jms.producer.max.attempts=<%=@scm_jms_producer_max_attempts %>
+scm.jms.producer.retry.delay.in.ms=<%=@scm_jms_producer_retry_delay_in_ms %>
+scm.jms.producer.exponential.backoff=<%=@scm_jms_producer_exponential_backoff %>
+scm.jms.producer.backoff.multiplier=<%=@scm_jms_producer_backoff_multiplier%>
+scm.jms.producer.max.delay.in.ms=<%=@scm_jms_producer_max_delay_in_ms%>
+
+scm.processor.retry.count=<%=@scm_processor_retry_count %>
+scm.processor.retry.delay=<%=@scm_processor_retry_delay %>
+
+poller.task.fixed.delay.prop=<%=@poller_task_fixed_delay_prop %>
+tp.processor.scheduler.fixed.delay=<%=@tp_processor_scheduler_fixed_delay %>
+
+#DpAPIEnableFlag
+dp.api.enabled=<%=@dp_api_enabled %>
+
+#Mongo Connection settings
+scm.mongodb.socketTimeoutMS=<%=@scm_mongodb_socketTimeoutMS%>
+scm.mongodb.connectionTimeoutMS=<%=@scm_mongodb_connectionTimeoutMS%>
+scm.mongodb.connectionPerHost=<%=@scm_mongodb_connectionPerHost%>

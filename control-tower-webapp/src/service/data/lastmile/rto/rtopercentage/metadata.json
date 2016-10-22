@@ -1,0 +1,220 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "",
+				"max": 100,
+				"format": "{value}%"
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0,
+			"stack": "percentage"
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"TWO": {
+		"filters": [{
+	        "name": "groupby",
+	        "dataUrl": "",
+	        "dependentOptions": null,
+	        "default": "fulfillmentmodel",
+	        "options": ["fulfillmentmodel", "paymentmode", "channelwise"],
+	        "dependsOn": null,
+	        "mandatory": true
+	    }],
+		"datatable": false,
+		"requestValueType": "chartTitle",
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "",
+				"max": 100,
+				"format": "{value}%"
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0,
+			"stack": "percentage"
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"THREE": {
+		"filters": [{
+	        "name": "groupby",
+	        "dependentOptions": null,
+	        "default": "",
+	        "options": ["couriergroup", "lanetype", "rtoreason", "supercategory"],
+	        "dependsOn": null,
+	        "mandatory": true
+	    }, {
+	        "name": "cummulative",
+	        "dataUrl": "",
+        	"dependentOptions": {"supercategory":["true", "false"], "couriergroup":["false"], "lanetype":["false"], "rtoreason":["false"]},
+	        "default": "",
+	        "options": [],
+        	"dependsOn": "groupby"
+	    }],
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"requestValueType": "chartTitle",
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FOUR": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "Avg."
+			}, {
+				"title": "Count"
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": []
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FIVE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"requestValueType": "series",
+		"yAxis": [
+			{
+				"title": "Avg."
+			}, {
+				"title": "Count"
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "L1",
+			"id": "ONE"
+		}, {
+			"name": "L2",
+			"id": "TWO"
+		}, {
+			"name": "L3",
+			"id": "THREE"
+		}, {
+			"name": "L4",
+			"id": "FOUR"
+		}, {
+			"name": "L5",
+			"id": "FIVE"
+		}
+	]
+}

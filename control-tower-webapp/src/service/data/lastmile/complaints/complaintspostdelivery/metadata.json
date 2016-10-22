@@ -1,0 +1,157 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "count"
+			}
+		],
+		"dataset": {
+			"series": [
+				
+			]
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0,
+			"stack": "count"
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"TWO": {
+		"chart": {
+            "borderColor": "#ced7d6",
+            "borderWidth": 2,
+            "height": 260
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"requestValueType": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"requestValueType": "series",
+		"yAxis": [
+			{
+				"title": "Count"
+			},
+			{
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0,
+			"stack": "count"
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"THREE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"requestValueType": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "count"
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FOUR": {
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"requestValueType": false,
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"chart": {
+			"type": "pie",
+			"plotBorderWidth": 0,
+            "backgroundColor": "none",
+            "plotBackgroundColor": "rgba(255, 255, 255, 0)",
+            "plotShadow": false
+		},
+		"seriesObj": {
+			"name": "",
+			"dataList": [],
+            "innerSize": "50%"
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "L1",
+			"id": "ONE"
+		}, {
+			"name": "L2",
+			"id": "TWO"
+		}, {
+			"name": "L3",
+			"id": "THREE"
+		}, {
+			"name": "L4",
+			"id": "FOUR"
+		}
+	]
+}

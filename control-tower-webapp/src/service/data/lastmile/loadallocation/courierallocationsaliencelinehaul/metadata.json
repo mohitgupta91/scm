@@ -1,0 +1,75 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"requestValueType": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "count"
+			}
+		],
+		"dataset": {
+			"series": [
+				
+			]
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0,
+			"stack": "count"
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			},
+			"dataLabelFormatter": "percentage"
+		}
+	},
+	"TWO": {
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "count"
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "L1",
+			"id": "ONE"
+		}, {
+			"name": "L2",
+			"id": "TWO"
+		}
+	]
+}

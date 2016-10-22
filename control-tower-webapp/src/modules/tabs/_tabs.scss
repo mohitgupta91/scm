@@ -1,0 +1,45 @@
+.controltower-tabs {
+	font-size: 12px;
+    line-height: 45px;
+    padding:0 20px;
+
+    
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+    }
+    li {
+    		a {
+    			color: inherit;
+	    		display: block;
+	        text-decoration: none;
+	        padding:0 25px;
+    		}
+    		color: #333333;
+        height: 43px;
+        cursor: pointer;
+        float: left;
+        position: relative;
+        &:hover, &.active{
+            color: #fb0229;
+          &:after{
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 100%;
+              background: #fb0229;
+              height: 3px;
+          }
+        }
+    
+    }
+    .title{
+        float: left;
+        font-size: 16px;
+        padding-right: 30px;
+    }
+}
+

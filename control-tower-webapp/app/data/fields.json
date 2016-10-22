@@ -1,0 +1,10 @@
+{
+  "fileds" : [
+  {
+      "name" : "type",
+      "options" : ["a","b","c"],
+      "control" :  "select",
+      "default" : "b"
+    }
+  ]
+}

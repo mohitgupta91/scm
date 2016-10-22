@@ -1,0 +1,449 @@
+{
+	"ONE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "",
+				"max": 100,
+				"format": "{value}%",
+				"tickAmount": 5
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "sum_delivered_percentage_d0",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d1",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				},{
+					"type": "column",
+					"name": "sum_delivered_percentage_gretaer_than_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_itr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_udl",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_rto",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "alt-percentage"
+				}, {
+					"type": "column",
+					"name": "shippedcount",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"TWO": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"THREE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FOUR": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "",
+				"max": 100,
+				"format": "{value}%",
+				"tickAmount": 5
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "sum_delivered_percentage_d0",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d1",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				},{
+					"type": "column",
+					"name": "sum_delivered_percentage_gretaer_than_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_itr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_udl",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_rto",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"FIVE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "",
+				"max": 100,
+				"format": "{value}%",
+				"tickAmount": 5
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "sum_delivered_percentage_d0",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d1",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				},{
+					"type": "column",
+					"name": "sum_delivered_percentage_gretaer_than_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_itr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_udl",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_rto",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "alt-percentage"
+				}, {
+					"type": "column",
+					"name": "shippedcount",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"SIX": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "",
+				"max": 100,
+				"format": "{value}%",
+				"tickAmount": 5
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "sum_delivered_percentage_d0",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d1",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				},{
+					"type": "column",
+					"name": "sum_delivered_percentage_gretaer_than_d3",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_itr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_udl",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "sum_delivered_percentage_rto",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_d2",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "alt-percentage"
+				}, {
+					"type": "column",
+					"name": "shippedcount",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "percentagedeliveredperformance.L1",
+			"id": "ONE"
+		}, {
+			"name": "percentagedeliveredperformance.L2",
+			"id": "TWO"
+		}, {
+			"name": "percentagedeliveredperformance.L3",
+			"id": "THREE"
+		}, {
+			"name": "percentagedeliveredperformance.L4",
+			"id": "FOUR"
+		}, {
+			"name": "percentagedeliveredperformance.L5",
+			"id": "FIVE"
+		}, {
+			"name": "percentagedeliveredperformance.L6",
+			"id": "SIX"
+		}
+	]
+}

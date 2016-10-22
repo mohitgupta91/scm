@@ -1,0 +1,75 @@
+<div>
+	<div class="instance-title-container">
+		<label class="inline-title">Instance Title  </label>
+		<input type="text" data-input="alertInstanceTitle">
+	</div>
+	<div class="data-range-container">
+		<div class="historical-date-range">
+			<label class="title">Historical date range</label>
+			<span>
+				<label class="inline-title">Current(-)</label>
+				<input type="text" data-input="historicalDateRangeStart">	
+			</span>	
+			<span>
+				<label class="inline-title">to Current(-)</label>
+				<input type="text" data-input="historicalDateRangeEnd">	
+			</span>	
+		</div>
+		<div class="current-date-range">
+			<label class="title">Current date range</label>
+			<span>
+				<label class="inline-title">Current(-)</label>
+				<input type="text" data-input="currentDateRangeStart">	
+			</span>	
+			<span>
+				<label class="inline-title">to Current(-)</label>
+				<input type="text" data-input="currentDateRangeEnd">
+			</span>	
+		</div>
+		
+	</div>
+	<div class="criteria top-row">
+		<div class="title top-row">Criteria</div>
+		<ul>
+	        <li id="groupingLogic">
+	            <label class="title">Grouping Logic</label>
+	        	<jq-select2 class="select2-group-logic" data-input="groupLogicName" placeholder="Nothing selected" value="">
+	        		<option></option>
+	                <!-- _.each(data.groupLogicData.data, function(item) { -->
+	                	<option value="{{item.groupLogicName}}">{{item.groupLogicName}}</option>
+	                <!-- }); -->
+	            </jq-select2>
+	    	</li>
+	    	<li id="operator">
+	            <label class="title">Operator</label>
+	        	<jq-select2 class="" data-input="operator" placeholder="Nothing selected" value="">
+        			<option></option>
+                	<option value=">"> > </option>
+                	<option value="<"> < </option>
+	            </jq-select2>
+	    	</li>
+	    	<li id="value">
+	            <label class="title">Value</label>
+	        	<input type="text" data-input="value">
+	    	</li>
+    	</ul>
+    	<ul>
+	        <li id="email">
+	            <label class="title">E-mail</label>
+	        	<input type="email" data-input="emailId">
+	    	</li>
+	    	<li id="ruleTime">
+	            <label class="title">Rule Time</label>
+	        	<jq-select2  class="" data-input="ruleTime" placeholder="Nothing selected" value="">
+        			<option></option>
+        			<!-- _.each(data.groupLogicData.ruleTime, function(item) { -->
+	                	<option value="{{item}}">{{item}}</option>
+	                <!-- }); -->
+	            </jq-select2>
+	    	</li>
+    	</ul>
+	</div>
+	<div class="button-container">
+		<button id="submit" class="custom-button">Submit</button>
+	</div>
+</div>

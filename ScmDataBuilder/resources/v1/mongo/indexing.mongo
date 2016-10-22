@@ -1,0 +1,5 @@
+db.supc_details.createIndex({"supc" : 1},{"name":"scm_supc","unique" : true})
+db.courier_group.createIndex({"courierCode" : 1},{"name":"scm_courierCode", "unique" : true})
+db.fulfillment_provider.createIndex({"code" : 1},{"name":"scm_code", "unique" : true})
+db.pincode_master.createIndex({"pincode" : 1},{"name":"scm_pincode", "unique" : true})
+db.scm_property.createIndex({"name" : 1},{"name":"scm_name", "unique" : true})

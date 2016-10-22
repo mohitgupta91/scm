@@ -1,0 +1,64 @@
+.dataTables_wrapper {
+  box-sizing: border-box; }
+  .dataTables_wrapper .dataTable {
+    width: auto;
+    margin-top: 0 !important;
+    table-layout: auto;
+    max-width: 100%; }
+  .dataTables_wrapper .dataTables_scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #E5E7E7; }
+  .dataTables_wrapper thead {
+    background: #e5e7e7; }
+    .dataTables_wrapper thead th {
+      height: auto;
+      padding: 0 !important;
+      font-size: 11px;
+      border: 1px solid #c8cdce !important;
+      border-left: 0 !important;
+      border-top: 0 !important;
+      color: #666; }
+  .dataTables_wrapper .dataTables_scrollBody {
+    border-bottom: none !important;
+    overflow-x: visible !important;
+    width: auto !important;
+    font-size: 12px; }
+    .dataTables_wrapper .dataTables_scrollBody thead {
+      display: none; }
+  .dataTables_wrapper .dataTables_scrollHead {
+    overflow: hidden !important;
+    width: auto !important; }
+  .dataTables_wrapper .db-header {
+    box-shadow: none;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    border-right: 0;
+    padding: 5px 10px; }
+  .dataTables_wrapper .row-content {
+    border: 1px solid transparent;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .dataTables_wrapper .header-text {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 10px;
+    text-overflow: ellipsis; }
+  .dataTables_wrapper .filter-values {
+    font-size: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 10pt;
+    margin: -1px 20px 0 0;
+    height: 14px;
+    font-weight: 400; }
+  .dataTables_wrapper .even {
+    background: #f9f9f9 !important; }
+  .dataTables_wrapper td {
+    border-bottom: 1px solid #eee;
+    padding: 0 !important;
+    border-right: 1px solid transparent; }
+  .dataTables_wrapper table.dataTable.no-footer {
+    border-bottom: none; }

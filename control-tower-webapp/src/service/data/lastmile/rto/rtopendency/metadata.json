@@ -1,0 +1,274 @@
+{
+	"ONE": {
+	    "tabularCharts": true,
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"requestValueType": "tableColumn",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"chart": {
+			"type": "pie",
+            "plotBorderWidth": 0,
+            "backgroundColor": "none",
+            "plotBackgroundColor": "rgba(255, 255, 255, 0)",
+            "plotShadow": false,
+			"width": 75,
+			"height": 75,
+			"spacingBottom": 0,
+	        "spacingTop": 0,
+	        "spacingLeft": 0,
+	        "spacingRight": 0
+		},
+		"seriesObj": {
+			"name": "",
+			"dataList": [],
+            "innerSize": "50%",
+			"yAxis": 0,
+			"dataLabels": {
+				"enabled": false
+			},
+			"showInLegend": false
+		}
+	},
+	"TWO": {
+	    "tabularCharts": true,
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"requestValueType": "tableColumn",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"chart": {
+			"type": "pie",
+            "plotBorderWidth": 0,
+            "backgroundColor": "none",
+            "plotBackgroundColor": "rgba(255, 255, 255, 0)",
+            "plotShadow": false,
+			"width": 75,
+			"height": 75,
+			"spacingBottom": 0,
+	        "spacingTop": 0,
+	        "spacingLeft": 0,
+	        "spacingRight": 0
+		},
+		"seriesObj": {
+			"name": "",
+			"dataList": [],
+            "innerSize": "50%",
+			"yAxis": 0,
+			"dataLabels": {
+				"enabled": false
+			},
+			"showInLegend": false
+		}
+	},
+	"THREE": {
+		"filters": [{
+	        "name": "groupby",
+	        "dataUrl": "",
+	        "dependentOptions": null,
+	        "default": "fulfillmentmodel",
+	        "options": ["lanetype", "fulfillmentmodel", "couriercode"],
+	        "dependsOn": null,
+	        "mandatory": true
+	    }],
+	    "tabularCharts": true,
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"requestValueType": "title",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"chart": {
+			"type": "pie",
+            "plotBorderWidth": 0,
+            "backgroundColor": "none",
+            "plotBackgroundColor": "rgba(255, 255, 255, 0)",
+            "plotShadow": false,
+			"width": 75,
+			"height": 75,
+			"spacingBottom": 0,
+	        "spacingTop": 0,
+	        "spacingLeft": 0,
+	        "spacingRight": 0
+		},
+		"seriesObj": {
+			"name": "",
+			"dataList": [],
+            "innerSize": "50%",
+			"yAxis": 0,
+			"dataLabels": {
+				"enabled": false
+			},
+			"showInLegend": false
+		}
+	},
+	"FOUR": {
+		"filters": [{
+	        "name": "groupby",
+	        "dataUrl": "",
+	        "dependentOptions": null,
+	        "default": "destinationcity",
+	        "options": ["fulfillmentcenter", "origincity", "destinationcity"],
+	        "dependsOn": null,
+	        "mandatory": true
+	    }],
+	    "tabularCharts": true,
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"requestValueType": "title",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"chart": {
+			"type": "pie",
+            "plotBorderWidth": 0,
+            "backgroundColor": "none",
+            "plotBackgroundColor": "rgba(255, 255, 255, 0)",
+            "plotShadow": false,
+			"width": 75,
+			"height": 75,
+			"spacingBottom": 0,
+	        "spacingTop": 0,
+	        "spacingLeft": 0,
+	        "spacingRight": 0
+		},
+		"seriesObj": {
+			"name": "",
+			"dataList": [],
+            "innerSize": "50%",
+			"yAxis": 0,
+			"dataLabels": {
+				"enabled": false
+			},
+			"showInLegend": false
+		}
+	},
+	"FIVE": {
+	    "tabularCharts": true,
+		"datatable": false,
+		"clickableDatapoints": false,
+		"clickableDataRow": false,
+		"title": "",
+		"subtitle": "",
+		"requestValueType": "title",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"chart": {
+			"type": "pie",
+            "plotBorderWidth": 0,
+            "backgroundColor": "none",
+            "plotBackgroundColor": "rgba(255, 255, 255, 0)",
+            "plotShadow": false,
+			"width": 75,
+			"height": 75,
+			"spacingBottom": 0,
+	        "spacingTop": 0,
+	        "spacingLeft": 0,
+	        "spacingRight": 0
+		},
+		"seriesObj": {
+			"name": "",
+			"dataList": [],
+            "innerSize": "50%",
+			"yAxis": 0,
+			"dataLabels": {
+				"enabled": false
+			},
+			"showInLegend": false
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "L1",
+			"id": "ONE"
+		}, {
+			"name": "L2",
+			"id": "TWO"
+		}, {
+			"name": "L3",
+			"id": "THREE"
+		}, {
+			"name": "L4",
+			"id": "FOUR"
+		}, {
+			"name": "L5",
+			"id": "FIVE"
+		}
+	]
+}

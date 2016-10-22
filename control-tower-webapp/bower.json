@@ -1,0 +1,43 @@
+{
+  "name": "control-tower-webapp",
+  "description": "",
+  "version": "0.1.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "webmodules-bootstrap": "3.2.34",
+    "webmodules-moment": "latest",
+    "webmodules-foo": ">=3.1.2",
+    "webmodules-bootloader": ">=0.1.7",
+    "webmodules-jqrouter": ">=1.0.8",
+    "webmodules-jqbus": "0.0.6",
+    "jsutils-file": ">=0.0.8",
+    "toastr": "latest",
+    "js-grid": "~1.4.1",
+    "spamjs-view": ">=0.0.14",
+    "spamjs-bootconfig": "0.0.15",
+    "jqtags-jq-tab": "latest",
+    "jqtags-jq-select": "latest",
+    "jqtags-jq-date": "latest",
+    "jqtags-jqx-input": "latest",
+    "jqtags-jqx-tags": "latest",
+    "jqtags-jq-select2": "latest",
+    "jqtags-jqx-select": "latest",
+    "spamjs-inline": "latest",
+    "highcharts.com": "#4.2.2",
+    "webmodules-underscore": "~1.8.31",
+    "this-is-it": "~1.0.0",
+    "jq-popover": "~0.1.4",
+    "jsutils-server": "~0.0.1",
+    "datatable-ct": "0.0.0",
+    "webmodules-lazy": "~0.0.0",
+    "jsgrid": "js-grid#^1.4.1",
+    "jsutils-i18n": "~0.0.0"
+  },
+  "resolutions": {
+    "jsutils-file": "~0.0.8",
+    "webmodules-jqtag": "0.0.7",
+    "jqmodules-x-editable": "1.5.2"
+  }
+}

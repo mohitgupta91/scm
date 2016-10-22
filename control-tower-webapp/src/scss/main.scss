@@ -1,0 +1,55 @@
+@import "variables";
+
+.view-controltower-app{
+    display: block;
+    height: 100%;
+    .app-sidebar{
+        width: 52px;
+        background: $white;
+        height: calc(100% - 45px);
+        float: left;
+        -webkit-box-shadow:1px 2px 4px 0 #dcdcdc;
+        box-shadow:1px 2px 4px 0 #dcdcdc;
+    }
+    .app-container{
+        width: calc(100% - 52px);
+        float: left;
+        height: calc(100% - 75px);
+        padding: 30px;
+        overflow-y: auto;
+    }
+    .app-tabs{
+        width: calc(100% - 52px);
+        float: left;
+        background: #f4f3f3;
+        border-bottom: 3px solid #d5d3d4;
+        border-left: 1px solid #eaeaea;
+        height: 46px;
+    }
+    .app-breadcrumb{
+        width: calc(100% - 52px);
+        float: left;
+        border-bottom: 1px solid #eaeaea;
+        border-left: 1px solid #eaeaea;
+        background-color: $white;
+        height: 30px;
+    }
+}
+
+@import "themes/select2-light";
+@import "../modules/header/header";
+@import "../modules/sidebar/sidebar";
+@import "../modules/buttonConfig/buttonConfig";
+@import "../modules/tabs/tabs";
+@import "../modules/filters/filters";
+@import "../modules/metrics/metrics";
+@import "../modules/alerts/alerts";
+@import "../modules/createalert/createalert";
+@import "../modules/updatealert/updatealert";
+@import "../modules/searchalert/searchalert";
+@import "../modules/notifications/notifications";
+@import "../modules/firstmile/firstmile";
+@import "../modules/charts/charts";
+@import "../modules/content/content";
+@import "../modules/breadcrumb/breadcrumb";
+@import "../modules/main/main";

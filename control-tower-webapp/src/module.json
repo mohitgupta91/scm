@@ -1,0 +1,89 @@
+{
+  "name": "controltower",
+  "controltower/style": {
+    "css": ["external/components/js-grid/dist/jsgrid-theme.min.css", "external/components/js-grid/dist/jsgrid.min.css", "../dist/style/library.css", "../dist/style/main.css"],
+    "on": ["external/datatable", "jqtags/jq-tab/css","jqtags/jq-date", "jqtags/jq-select", "controltower/toast"]
+  },
+  "controltower/app": {
+    "js": ["controltower.app.js"],
+    "on": ["webmodules/bootloader", "webmodules/underscore", "webmodules/lazy", "spamjs/bootconfig", "jsutils/server", "controltower/service", "controltower/toast"]
+  },
+  "controltower/external": {
+    "js": ["external/components/datatable-ct/media/js/dataTables.foundation.js", "external/components/js-grid/dist/jsgrid.min.js"],
+    "on": ["webmodules/jquery", "webmodules/bootstrap/js", "webmodules/jqrouter",
+     "jqtags/jq-popover", "spamjs/modal", "jqtags/jq-select","taxengine/statescities"]
+  },
+  "controltower/header": {
+    "on": ["spamjs/view"],
+    "js": ["modules/header/controltower.header.js"]
+  },
+  "controltower/sidebar": {
+    "on": ["spamjs/view"],
+    "js": ["modules/sidebar/controltower.sidebar.js"]
+  },
+  "controltower/content": {
+    "on": ["spamjs/view"],
+    "js": ["modules/content/controltower.content.js"]
+  },
+  "controltower/main": {
+    "on": ["spamjs/view"],
+    "js": ["modules/main/controltower.main.js"]
+  },
+  "controltower/breadcrumb": {
+    "on": ["spamjs/view"],
+    "js": ["modules/breadcrumb/controltower.breadcrumb.js"]
+  },
+  "controltower/tabs": {
+    "on": ["spamjs/view"],
+    "js": ["modules/tabs/controltower.tabs.js"]
+  },
+  "controltower/filters": {
+    "js": ["modules/filters/controltower.filters.js"],
+    "on": ["spamjs/view", "controltower/external","jqmodules/select2", "webmodules/rivets", "webmodules/underscore"]
+  },
+  "controltower/buttonConfig": {
+    "js": ["modules/buttonConfig/controltower.buttonConfig.js"],
+    "on": ["spamjs/view", "webmodules/rivets", "webmodules/underscore"]
+  },
+  "controltower/metrics": {
+    "js": [ "service/MetricsDataService.js","modules/metrics/controltower.metrics.js"],
+    "on": ["spamjs/view", "webmodules/underscore", "controltower/filters", "controltower/buttonConfig", "jqtags/jq-select2", "jqtags/jq-date", "jqtags/jq-tab", "spamjs/datatable", "controltower/charts"]
+  },
+  "controltower/alerts": {
+    "js": ["modules/alerts/controltower.alerts.js"],
+    "on": ["spamjs/view", "webmodules/underscore", "controltower/filters", "controltower/buttonConfig", "jqtags/jq-select2", "jqtags/jq-date", "jqtags/jq-tab"]
+  },
+  "controltower/createalert": {
+    "js": ["modules/createalert/controltower.createalert.js"],
+    "on": ["spamjs/view", "webmodules/underscore", "controltower/filters", "controltower/buttonConfig", "jqtags/jq-select2", "jqtags/jq-date", "jqtags/jq-tab"]
+  },
+  "controltower/updatealert": {
+    "js": ["modules/updatealert/controltower.updatealert.js"],
+    "on": ["spamjs/view", "webmodules/underscore", "controltower/filters", "controltower/buttonConfig", "jqtags/jq-select2", "jqtags/jq-date", "jqtags/jq-tab"]
+  },
+  "controltower/searchalert": {
+    "js": ["modules/searchalert/controltower.searchalert.js"],
+    "on": ["spamjs/view", "webmodules/underscore", "controltower/filters", "controltower/buttonConfig", "jqtags/jq-select2", "jqtags/jq-date", "jqtags/jq-tab"]
+  },
+  "controltower/notifications": {
+    "js": ["modules/notifications/controltower.notifications.js"],
+    "on": ["spamjs/view", "webmodules/underscore", "controltower/filters", "controltower/buttonConfig", "jqtags/jq-select2", "jqtags/jq-date", "jqtags/jq-tab"]
+  },
+  "controltower/firstmile": {
+    "on": ["spamjs/view"],
+    "js": ["modules/firstmile/controltower.firstmile.js"]
+  },
+  "controltower/charts": {
+  	"on": ["webmodules/jquery"],
+    "js": ["modules/charts/controltower.charts.js", "external/components/highcharts.com/lib/highcharts.js"]
+  },
+  "controltower/toast": {
+  	"on": ["webmodules/jquery"],
+  	"css": ["external/components/toastr/toastr.css"],
+    "js": ["modules/toast/controltower.toast.js", "external/components/toastr/toastr.js"]
+  },
+  "controltower/service": {
+  	"on": ["webmodules/jquery", "controltower/toast","jsutils/i18n"],
+    "js": ["service/DataService.js", "service/UserService.js", "service/ResourceUtil.js"]
+  }
+}

@@ -1,0 +1,38 @@
+#Add following config in activemq.xml):
+
+<broker schedulerSupport="true">
+...
+
+   <destinationPolicy>
+     <policyMap>
+       <policyEntries>
+         <!-- Set the following policy on all queues using the '>' wildcard -->
+         <policyEntry queue=">">
+           <deadLetterStrategy>
+             <individualDeadLetterStrategy
+               queuePrefix="DLQ." useQueueForQueueMessages="true" />
+           </deadLetterStrategy>
+         </policyEntry>
+       </policyEntries>
+     </policyMap>
+   </destinationPolicy>
+
+   <plugins>
+   <redeliveryPlugin fallbackToDeadLetter="true" sendToDlqIfMaxRetriesExceeded="true">
+                   <redeliveryPolicyMap>
+                       <redeliveryPolicyMap>
+                           <redeliveryPolicyEntries>
+                               <!-- a destination specific policy -->
+                               <redeliveryPolicy queue="data-poller" maximumRedeliveries="6" initialRedeliveryDelay="1000" useExponentialBackOff="true" backOffMultiplier="2.0" />
+                               <redeliveryPolicy queue="data-processor" maximumRedeliveries="6" initialRedeliveryDelay="5000" useExponentialBackOff="true" backOffMultiplier="6.8" />
+                           </redeliveryPolicyEntries>
+                           <!-- the fallback policy for all other destinations -->
+                           <defaultEntry>
+                               <redeliveryPolicy maximumRedeliveries="6" initialRedeliveryDelay="1000" useExponentialBackOff="false" backOffMultiplier="5.0"/>
+                           </defaultEntry>
+                       </redeliveryPolicyMap>
+                   </redeliveryPolicyMap>
+               </redeliveryPlugin>
+   </plugins>
+ ...
+</broker>

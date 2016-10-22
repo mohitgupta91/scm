@@ -1,0 +1,44 @@
+<!-- if(data.metricslist) { -->
+	<ul class="searchbar">
+		<li> <input id="search-metric" name="Search" type="search" placeholder="Search" /> </li>
+	</ul>
+	<div class="controltower-metrics-list">
+		<ul>
+			<!-- _.each(data.metricslist, function(metric) { -->
+				<li><a jqr-go href="/controltower/{{data.module}}/{{data.submodule}}/{{metric.name}}">{{metric.label}}</a></li>
+			<!-- }) -->
+		</ul>
+	</div>
+<!-- } else { -->
+	<div class="controltower-metrics">
+	    <div class="bottom-container">
+	        <div class="filters" id="main-filters"></div>
+	        <div class="button-container"></div>
+	        <div class="clear"></div>
+	        <div class="chart">
+	        <jq-tab value="gen" class="matricstab" id="matricstab">
+	            <jq-tab-heads id="jq-tab-heads">
+	                <!-- _.each(data.tabsInfo, function(item) { -->
+	                <jq-tab-head disabled value="{{item.id}}" id="{{item.id}}" class="jq-tab-head">{{item.displayName}}</jq-tab-head>    
+	                <!-- }); -->
+	            </jq-tab-heads>
+	            <!-- _.each(data.tabsInfo, function(item, index) {
+	            if(index === 0) { -->
+	            <jq-tab-pane tab="{{item.id}}">
+	                <div id="breadDataContainer"></div>
+	                <div id="chart-filters-area" align="right">
+	                	<div class="chart-filters-buttons" id="chart-filters-buttons"></div>
+	                	<div class="chart-filters" id="chart-filters"></div>
+	                	<div class="clear-both"></div>
+	                </div>
+	                <div class="chart-area" id="chart-area"></div>
+	                <div class="grid-container"></div>
+	                <div id="custom-metric" class="custom-metric"></div>
+	            </jq-tab-pane>
+	            <!-- } 
+	            }); -->
+	        </jq-tab>
+	        </div>
+	    </div>
+	</div>
+<!-- } -->

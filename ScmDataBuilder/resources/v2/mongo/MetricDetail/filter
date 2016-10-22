@@ -1,0 +1,111 @@
+use scm;
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "paymentmode",
+	"options" : [
+		"STD",
+        "COD",
+        "EMAIL",
+        "STD/COD",
+        "PKU-STD",
+        "PKU-COD"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "channelwise",
+	"options" : [
+		"WEB",
+		"Msite",
+		"APP"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "rtoreason",
+	"options" : [
+		"CUSTOMER",
+        "SNAPDEAL",
+        "COURIER"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "supercategory",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "couriercode",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "usertype",
+	"options" : [
+		"GUEST",
+		"REGISTERED"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "currentstatus",
+	"options" : [
+		"RTI",
+		"RUD",
+		"RTC",
+		"RTN",
+		"DPT"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "itemvalue",
+	"options" : [
+		"0 - 2000",
+		"2000 - 100000",
+		"100000 - 500000"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "fulfillmentcenter",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+
+

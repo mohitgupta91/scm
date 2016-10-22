@@ -1,0 +1,182 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "area",
+					"name": "pendency",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "pending",
+					"zIndex": 1
+				}, {
+					"type": "column",
+					"name": "totalshipped",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count",
+					"zIndex": 2
+				}, {
+					"type": "column",
+					"name": "totalclosed",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count",
+					"zIndex": 2
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"TWO": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"THREE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FOUR": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FIVE": {
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "s2dpendencytrend.L1",
+			"id": "ONE"
+		}, {
+			"name": "s2dpendencytrend.L2",
+			"id": "TWO"
+		}, {
+			"name": "s2dpendencytrend.L3",
+			"id": "THREE"
+		}, {
+			"name": "s2dpendencytrend.L4",
+			"id": "FOUR"
+		}, {
+			"name": "s2dpendencytrend.L5",
+			"id": "FIVE"
+		}
+	]
+}

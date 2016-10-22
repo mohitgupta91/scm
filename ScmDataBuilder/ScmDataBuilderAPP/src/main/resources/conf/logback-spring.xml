@@ -1,0 +1,87 @@
+<configuration scan="true" scanPeriod="60 seconds">
+	<!-- <conversionRule conversionWord="R" converterClass="com.snapdeal.base.logging.LogbackRequestPatternConvertor"/> -->
+	<property resource="application.properties" />
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%date %-5level [%thread] [%class{0}] [line : %line] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%date %-5level [%thread] [%class{0}] [line : %line] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<prudent>false</prudent>
+		<file>${logging.path}/scm-data-server.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>${logging.path}/scm-data-server.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%date %-5level [%thread] [%class{0}] [line : %line ] -	%msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="FILEHANDLER-ERROR-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logging.path}/scm-filehandler-error.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>${logging.path}/scm-filehandler-error.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+        <encoder>
+            <pattern>%date %-5level [%thread] [%class{0}] [line : %line ] - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<includeCallerData>true</includeCallerData>
+		<appender-ref ref="FILEHANDLER-ERROR-FILE" />
+	</appender>
+    <logger name="FILEHANDLER-ERROR-LOGGER" level="ERROR" additivity="false">
+        <appender-ref ref="FILE_ASYNC"/>
+    </logger>
+    <appender name="DATAPROCESSOR-ERROR-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logging.path}/scm-dataprocessor-error.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>${logging.path}/scm-dataprocessor-error.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+        <encoder>
+            <pattern>%date %-5level [%thread] [%class{0}] [line : %line ] - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="PROCESSOR_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<includeCallerData>true</includeCallerData>
+		<appender-ref ref="DATAPROCESSOR-ERROR-FILE" />
+	</appender>
+    <logger name="DATAPROCESSOR-ERROR-LOGGER" level="ERROR" additivity="false">
+        <appender-ref ref="PROCESSOR_ASYNC"/>
+    </logger>
+	<appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<includeCallerData>true</includeCallerData>
+		<appender-ref ref="FILE" />
+		<appender-ref ref="STDOUT" />
+	</appender>
+	<root level="INFO">
+	<!-- 	<appender-ref ref="STDOUT" /> -->
+		<appender-ref ref="ASYNC" />
+	</root>
+</configuration>

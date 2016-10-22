@@ -1,0 +1,16 @@
+{
+  "name": "spamjs/datatable",
+  "spamjs/datatable": {
+  	"on": ["external/datatable"],
+    "css": ["spamjs.datatable.css"],
+    "js": ["spamjs.datatable.js"]
+  },
+ "spamjs/datatable/test": {
+  	"on": ["spamjs/datatable", "webmodules/boostrap", "spamjs/datatable/css"],
+    "js": ["spamjs.datatable.test.js"]
+  },
+  "spamjs/datatable/css": {
+    "css": ["spamjs.datatable.css"],
+    "on": ["external/datatable"]
+  }
+}

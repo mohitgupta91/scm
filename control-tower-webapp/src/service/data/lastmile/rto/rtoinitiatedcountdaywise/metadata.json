@@ -1,0 +1,189 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"requestValueType": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "RTO Date",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "# of RTO Shipments"
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "rtocount",
+					"dataList": [],
+					"yAxis": 0
+				}
+			]
+		}
+	},
+	"TWO": {
+		"filters": [{
+	        "name": "groupby",
+	        "dataUrl": "",
+	        "dependentOptions": null,
+	        "default": "fulfillmentmodel",
+	        "options": ["fulfillmentmodel", "paymentmode", "channelwise"],
+	        "dependsOn": null,
+	        "mandatory": true
+	    }],
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "RTO Date",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "# of RTO Shipments"
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "column",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"THREE": {
+		"filters": [{
+	        "name": "groupby",
+	        "dataUrl": "",
+	        "dependentOptions": null,
+	        "default": "couriergroup",
+	        "options": ["couriergroup", "lanetype", "rtoreason"],
+	        "dependsOn": null,
+	        "mandatory": true
+	    }],
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"requestValueType": "series",
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FOUR": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "Count"
+			}, {
+				"title": ""
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "rtocount",
+					"dataList": [],
+					"yAxis": 0
+				}
+			]
+		}
+	},
+	"FIVE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "Count"
+			}, {
+				"title": ""
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "rtocount",
+					"dataList": [],
+					"yAxis": 0
+				}
+			]
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "rtoinitiatedcountdaywise.L1",
+			"id": "ONE"
+		}, {
+			"name": "rtoinitiatedcountdaywise.L2",
+			"id": "TWO"
+		}, {
+			"name": "rtoinitiatedcountdaywise.L3",
+			"id": "THREE"
+		}, {
+			"name": "rtoinitiatedcountdaywise.L4",
+			"id": "FOUR"
+		}, {
+			"name": "rtoinitiatedcountdaywise.L5",
+			"id": "FIVE"
+		}
+	]
+}

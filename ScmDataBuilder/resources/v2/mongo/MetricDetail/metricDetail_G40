@@ -1,0 +1,31 @@
+use scm;
+db.metric_details.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.MetricDetails",
+	"metricID" : "rtopendency",
+	"filterKey" : {
+        "itemvalue" : false,
+        "fulfillmentmodel" : false,
+        "fulfillmentcenter" : false,
+        "lanetype" : false,
+        "originstate" : false,
+        "origincity" : false,
+        "metro" : false,
+        "destinationregion" : false,
+        "destinationstate" : false,
+        "destinationcity" : false,
+        "destinationtier" : false,
+        "lanegroup" : false,
+        "lane" : false,
+        "mode" : false,
+        "couriergroup" : false,
+        "couriertype" : false,
+        "couriercode" : false,
+        "rtoreason" : false,
+        "paymentmode" : false,
+        "channelwise" : false,
+        "supercategory" : false,
+        "usertype" : false
+	},
+	"created" : new Date(),
+	"updated" : new Date()
+});

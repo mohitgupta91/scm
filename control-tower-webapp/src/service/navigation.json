@@ -1,0 +1,215 @@
+{
+	"modules": [
+		{
+			"name": "firstmile",
+			"label": "First Mile",
+			"tabs": ["preorder", "orderprofile", "codverifivation", "ordertoship"],
+			"icon": "road"
+		}, {
+			"name": "lastmile",
+			"label": "Last Mile",
+			"tabs": ["loadallocation", "shiptodeliver", "linehaul", "ndr", "rto", "rto_ovs", "complaints"],
+			"icon": "shopping-cart"
+		}, {
+			"name": "reversepickup",
+			"label": "Reverse Pick Up",
+			"tabs": ["pickup", "qc", "rts"],
+			"icon": "refresh"
+		}, {
+			"name": "pnl",
+			"label": "P&L",
+			"icon": "usd"
+		}, {
+			"name": "serviceability",
+			"label": "Serviceability",
+			"tabs": ["dangerousgoods", "reach"],
+			"icon": "cog"
+		}, {
+			"name": "packaging",
+			"label": "Packaging",
+			"icon": "inbox"
+		}, {
+			"name": "snop",
+			"label": "S&amp;OP",
+			"icon": "stats"
+		}, {
+			"name": "alerts",
+			"label": "Alerts",
+			"tabs": ["createalert", "updatealert", "searchalert"],
+			"icon": "bell"
+		}
+	],
+	"submodules": [
+		{
+			"name": "notifications",
+			"label": "Notifications"
+		}, {
+			"name": "searchalert",
+			"label": "Search Alert"
+		}, {
+			"name": "createalert",
+			"label": "Create Alert"
+		}, {
+			"name": "updatealert",
+			"label": "Update Alert"
+		}, {
+			"name": "loadallocation",
+			"label": "Load Allocation",
+			"metrics": ["courierallocationsalience", "courierallocationsaliencelinehaul", "icavsloadallocation" ]
+		}, {
+			"name": "shiptodeliver",
+			"label": "Ship to Deliver",
+			"metrics": ["avgo2dperformancedelivered", "avgo2sperformanceshipped", "deliveryadherance",
+						"attemptadherance", "percentagedeliveredperformance", "s2dpendencytrend",
+						"percentageattemptperformance", "s2dpendencyintegratedcouriers", "s2dpendencynonintegratedcouriers",
+						"currentundeliveredpendency"]
+		}, {
+			"name": "linehaul",
+			"label": "Line Haul",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "ndr",
+			"label": "NDR",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "rto",
+			"label": "RTO",
+			"metrics": ["rtoinitiatedcountdaywise", "rtopercentage", "rtopendency"]
+		}, {
+			"name": "rto_ovs",
+			"label": "RTO - OVS",
+			"metrics": ["callingccandivrs", "manualverificationrate", "ordersverifiedduringnightinbound"]
+		}, {
+			"name": "complaints",
+			"label": "Complaints",
+			"metrics": ["complaintspredelivery", "complaintspostdelivery"]
+		}, {
+			"name": "reach",
+			"label": "Reach",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "dangerousgoods",
+			"label": "Dangerous Goods",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "rts",
+			"label": "RTS",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "qc",
+			"label": "QC",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "pickup",
+			"label": "Pickup",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "ordertoship",
+			"label": "Ordet to Ship",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "codverifivation",
+			"label": "COD Verification",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "orderprofile",
+			"label": "Order Profile",
+			"metrics": ["sample", "sample", "sample"]
+		}, {
+			"name": "preorder",
+			"label": "Pre Order",
+			"metrics": ["sample", "sample", "sample"]
+		}
+	],
+	"metrics": [
+		{
+			"id": "G1",
+			"name": "avgo2dperformancedelivered",
+			"label": "Avg O2D Performance - Delivered Date"
+		}, {
+			"id": "G2",
+			"name": "avgo2sperformanceshipped",
+			"label": "Avg O2D Performance - Shipped Date"
+		}, {
+			"id": "G3",
+			"name": "deliveryadherance",
+			"label": "Delivery Adherance"
+		}, {
+			"id": "G4",
+			"name": "attemptadherance",
+			"label": "Attempt Adherance"
+		}, {
+			"id": "G5",
+			"name": "percentagedeliveredperformance",
+			"label": "Percentage Delivered Performance"
+		}, {
+			"id": "G6",
+			"name": "s2dpendencytrend",
+			"label": "S2D Pendency Trend"
+		}, {
+			"id": "G7",
+			"name": "percentageattemptperformance",
+			"label": "Percentage Attempt Performance"
+		}, {
+			"id": "G8",
+			"name": "s2dpendencyintegratedcouriers",
+			"label": "Current S2D  Pendency - Integrated couriers"
+		},{
+			"id": "G9",
+			"name": "s2dpendencynonintegratedcouriers",
+			"label": "Current S2D  Pendency - Non Integrated couriers"
+		},{
+			"id": "G10",
+			"name": "currentundeliveredpendency",
+			"label": "Current Undilivered Pendency"
+		},{
+			"id": "G11",
+			"name": "courierallocationsalience",
+			"label": "Courier Allocation Salience - For All couriers"
+		},{
+			"id": "G12",
+			"name": "courierallocationsaliencelinehaul",
+			"label": "Courier Allocation Salience - For LMC couriers in Linehaul"
+		},{
+			"id": "G13",
+			"name": "icavsloadallocation",
+			"label": "ICA vs Load Allocation - For All couriers"
+		},{
+			"id": "G21",
+			"name": "complaintspredelivery",
+			"label": "Complaints - Pre Delivery"
+		},{
+			"id": "G22",
+			"name": "complaintspostdelivery",
+			"label": "Complaints - Post Delivery"
+		},{
+			"id": "G38",
+			"name": "rtoinitiatedcountdaywise",
+			"label": "RTO Count"
+		},{
+			"id": "G39",
+			"name": "rtopercentage",
+			"label": "RTO Percentage"
+		},{
+			"id": "G40",
+			"name": "rtopendency",
+			"label": "RTO Pendency"
+		},{
+			"id": "G44",
+			"name": "callingccandivrs",
+			"label": "Calling - CC and IVRS"
+		},{
+			"id": "G45",
+			"name": "manualverificationrate",
+			"label": "Manual verification rate"
+		},{
+			"id": "G46",
+			"name": "ordersverifiedduringnightinbound",
+			"label": "Orders verified during night hours (Inbound)"
+		},{
+			"id": "G0",
+			"name": "sample",
+			"label": "Dummy Metric"
+		}
+	]
+}

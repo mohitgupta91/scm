@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+</head>
+<title>Control Tower</title>
+<body>
+    <script th:inline="javascript" th:src= "${web_server_url}+'/dist/bootloader_bundled/webmodules.bootloader.js'">
+    bootloader({
+			debug : true,
+			version : "[[${version}]]",
+			//baseUrl : "",
+			//appContext : '',
+			//resourceDir : null,
+			//resourceUrl : "",
+			//resourceJson : "dist/resource.json",
+			indexBundle : "controltower/app",
+			//debugBundles : [],
+            apiServer  :  "/data/"
+		});
+       window.CONST = { MAX_DATE_RANGE_ALLOWED : "[[${max_date_range}]]", MAX_PAGE_RANGE_ALLOWED : "[[${max_page_range}]]" }
+	</script>
+	
+</body>
+</html>

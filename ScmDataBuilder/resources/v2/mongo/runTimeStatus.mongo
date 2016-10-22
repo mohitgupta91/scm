@@ -1,0 +1,1 @@
+db.runtime_status.insert({"runtimeStatusKey" : "MONGO_SCHEDULER_LAST_EXECUTION_TIME", "value" : new Date(), "created":new  Date(), "updated" : new Date()});

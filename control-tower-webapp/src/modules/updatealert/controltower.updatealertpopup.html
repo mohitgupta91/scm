@@ -1,0 +1,95 @@
+<div class="controltower-updatealert" >
+    <!-- var listItem = data.popupData.itemData; -->
+    <div id ="updatePopupContainer" class="modal-header ">
+        <a class="modal-title" id="backButton"> Back </a>
+    </div>
+
+    <div class="modal-body updatealert-body" id="module-body">
+    	<ul>
+    		<li>
+		    	<div class="instance-title">
+		            <label class="inline-title">Instance Title</label>
+		            <input type="text" data-input="alertInstanceTitle" value= {{listItem.alertInstanceTitle}}>
+		        </div>
+    		</li>
+    		<li>
+                <div class="data-range-container">
+                    <div class="historical-date-range">
+                        <label class="title">Historical date range</label>
+                        <span>
+                            <label class="inline-title">Current(-)</label>
+                            <input type="text" data-input="historicalDateRangeStart" value= {{listItem.historicalDateRangeStart}}>   
+                        </span> 
+                        <span>
+                            <label class="inline-title">to Current(-)</label>
+                            <input type="text" data-input="historicalDateRangeEnd" value= {{listItem.historicalDateRangeEnd}}> 
+                        </span> 
+                    </div>
+                    <div class="current-date-range">
+                        <label class="title">Current date range</label>
+                        <span>
+                            <label class="inline-title">Current(-)</label>
+                            <input type="text" data-input="currentDateRangeStart" value= {{listItem.currentDateRangeStart}}>  
+                        </span> 
+                        <span>
+                            <label class="inline-title">to Current(-)</label>
+                            <input type="text" data-input="currentDateRangeEnd" value= {{listItem.currentDateRangeEnd}}>
+                        </span> 
+                    </div>
+                </div>
+    		</li>
+    		<li class="criteria">
+    			<ul>
+                    <li id="groupingLogic">
+                        <label class="title">Grouping Logic</label>
+                            <jq-select2 class="select2-group-logic" data-input="groupLogicName" placeholder="Nothing selected" value={{listItem.groupLogicName}}>
+                            <option></option>
+                            <!-- _.each(data.popupData.data, function(item) { -->
+                            <option value="{{item.groupLogicName}}">{{item.groupLogicName}}</option>
+                            <!-- }); -->
+                        </jq-select2>
+                    </li>
+                    <li id="operator">
+                        <label class="title">Operator</label>
+                            <jq-select2 class="" data-input="operator" value= "{{listItem.operator}}" placeholder="Nothing selected" >
+                            <option></option>
+                            <option value=">" > > </option>
+                            <option value="<" > < </option>
+                            <option value="=" > = </option>
+                        </jq-select2>
+                	</li>
+                    <li id="value">
+                        <label class="title">Value</label>
+                        <input type="text" data-input="value" value= {{listItem.value}}>
+                    </li>
+		    		
+        		</ul>
+                <div class="fileDataList" style="margin: 10px 0px;">
+                    <div id="fileDataList" style="padding: 0px 40px;width:100%!important;"></div>
+                    <button id="resetFileTable" style="margin-right: 40px;float:right;display:none;font-size:8pt;">reset</button>
+                </div>
+    		</li>
+            
+    		<li class="criteria">
+    			<ul>
+                    <li id="email">
+                        <label class="title">E-mail</label>
+                        <input type="email" data-input="emailId" value= {{listItem.emailId}}>
+                    </li>
+                    <li id="ruleTime">
+                        <label class="title">Rule Time</label>
+                        <jq-select2  class="" data-input="ruleTime" placeholder="Nothing selected" value={{listItem.ruleTime}}>
+                        <option></option>
+                        <!-- _.each(data.popupData.ruleTime, function(item) { -->
+                        <option value="{{item}}">{{item}}</option>
+                        <!-- }); -->
+                    </jq-select2>
+                </li>
+    		</li>
+    	</ul>
+	</div>
+    <div class="modal-footer">
+        <button type="button" id="saveChanges"class="btn btn-primary save_destinations">Save Changes</button>
+        <button type="button" id="deleteBtn" class="btn btn-default" data-dismiss="modal">Delete</button>
+    </div>
+</div>

@@ -1,0 +1,317 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "",
+				"max": 100,
+				"format": "{value}%"
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "percentage_delivered_after_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_within_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_before_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "line",
+					"name": "deliveredcount",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"TWO": {
+		"chart": {
+            "borderColor": "#ced7d6",
+            "borderWidth": 2,
+            "height": 260
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "",
+				"max": 100,
+				"format": "{value}%"
+			}, {
+				"title": ""
+			}
+		],
+		"requestValueType": "chartTitle", 
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "percentage_delivered_after_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_within_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_before_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "line",
+					"name": "deliveredcount",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"THREE": {
+		"chart": {
+            "borderColor": "#ced7d6",
+            "borderWidth": 2,
+            "height": 260
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "",
+				"max": 100,
+				"format": "{value}%"
+			}, {
+				"title": ""
+			}
+		],
+		"requestValueType": "chartTitle", 
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "percentage_delivered_after_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_within_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_before_eddr",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "percentage"
+				}, {
+					"type": "line",
+					"name": "deliveredcount",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"FOUR": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "",
+				"max": 100,
+				"format": "{value}%",
+				"tickAmount": 5
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "percentage_delivered_after_eddr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_within_eddr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_before_eddr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "deliveredcount",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"FIVE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "",
+				"max": 100,
+				"format": "{value}%",
+				"tickAmount": 5
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "percentage_delivered_after_eddr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_within_eddr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "percentage_delivered_before_eddr",
+					"dataList": [],
+					"yAxis": 1,
+					"stack": "percentage"
+				}, {
+					"type": "column",
+					"name": "deliveredcount",
+					"dataList": [],
+					"yAxis": 0,
+					"stack": "count"
+				}
+			]
+		},
+		"plotOptions": {
+			"column": {
+				"stacking": "normal"
+			}
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "deliveryadherance.L1",
+			"id": "ONE"
+		}, {
+			"name": "deliveryadherance.L2",
+			"id": "TWO"
+		}, {
+			"name": "deliveryadherance.L3",
+			"id": "THREE"
+		}, {
+			"name": "deliveryadherance.L4",
+			"id": "FOUR"
+		}, {
+			"name": "deliveryadherance.L5",
+			"id": "FIVE"
+		}
+	]
+}

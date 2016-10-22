@@ -1,0 +1,38 @@
+<div class="controltower-filters">
+    <div class="select2-filters single-select-filter multiremote-filter" data-filtername="test">
+        <!--HELLO-->
+    </div>
+    <ul>
+        <!-- _.each(data.filtersObj, function(item) { console.log(item.type) -->
+        <li>
+            <!-- if(item.type == "date"){ -->
+            <label class="title">{{item.label}}<!-- if(item.mandatory){ -->*<!-- } --></label>
+
+                <jq-date data-filtername="{{item.name}}" data-mandatory="{{item.mandatory}}" class="data-filters date-filter" maxdate="{{item.maxDate}}" mindate="{{item.minDate}}" value="{{item.default}}"></jq-date>
+            <!-- }else{ -->
+                <!-- if(item.type == "multiselect" && !item.dataUrl){ -->
+            <label class="title">{{item.label}}<!-- if(item.mandatory){ -->*<!-- } --></label>
+                    <jq-select multiple class="select2-filters multi-select-filter data-filters" data-mandatory="{{item.mandatory}}" data-filtername="{{item.name}}" placeholder="Nothing selected" data-max-options="6" value="{{item.default}}">
+                        <!-- _.each(item.options, function(item) { -->
+                        <option value="{{item.id}}">{{item.text}}</option>
+                        <!-- }); -->
+                    </jq-select>
+                <!-- }else if(item.dataUrl){ -->
+            <label class="title">{{item.label}}<!-- if(item.mandatory){ -->*<!-- } --></label>
+                    <button class="select2-filters single-select-filter multiremote-filter" data-mandatory="{{item.mandatory}}" data-url="{{item.dataUrl}}" disabled data-filtername="{{item.name}}">
+                        {{item.name}}
+                    </button>
+                <!-- } else { console.log(item,".....") -->
+            <label class="title">{{item.label}}<!-- if(item.mandatory){ -->*<!-- } --></label>
+                    <jq-select2 allowclear class="select2-filters single-select-filter data-filters" data-mandatory="{{item.mandatory}}" data-filtername="{{item.name}}" placeholder="Nothing selected" data-max-options="6" value="{{item.default}}">
+                        <option></option>
+                        <!-- _.each(item.options, function(item) { -->
+                        <option value="{{item.id}}">{{item.text}}</option>
+                        <!-- }); -->
+                    </jq-select2>
+                <!-- } -->
+            <!-- } -->
+        </li>
+        <!-- }); -->
+    </ul>
+</div>

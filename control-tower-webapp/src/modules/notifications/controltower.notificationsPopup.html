@@ -1,0 +1,105 @@
+<!--div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+    <div class="modal-dialog modal-lg" role="document"-->
+        <div class="controltower-notifications">
+
+           <!-- console.log(data);var instanceItem = data.popupData.instanceData; var notificationItem = data.popupData.notificationsItemData; var userDetails = data.popupData.userDetails -->
+            <div class="modal-header">
+                <!--button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button-->
+                <a class="modal-title" id="backButton"> back </a>
+            </div>
+
+            <div class="modal-body" id="module-body">
+                <div class="notifications-content">
+                    <div class="instance-title">
+                        <label class="title">Instance Title</label>
+                        <input type="text" data-input="alertInstanceTitle" value= {{instanceItem.alertInstanceTitle}}>
+                    </div>
+                    <div class="data-range-container">
+                        <div class="historical-date-range">
+                            <label class="title">Historical date range</label>
+                            <span>
+                                <label class="inline-title">Current(-)</label>
+                                <input type="text" data-input="historicalDateRangeStart" value= {{instanceItem.historicalDateRangeStart}}>   
+                            </span> 
+                            <span>
+                                <label class="inline-title">to Current(-)</label>
+                                <input type="text" data-input="historicalDateRangeEnd" value= {{instanceItem.historicalDateRangeEnd}}> 
+                            </span> 
+                        </div>
+                        <div class="current-date-range">
+                            <label class="title">Current date range</label>
+                            <span>
+                                <label class="inline-title">Current(-)</label>
+                                <input type="text" data-input="currentDateRangeStart" value= {{instanceItem.currentDateRangeStart}}>  
+                            </span> 
+                            <span>
+                                <label class="inline-title">to Current(-)</label>
+                                <input type="text" data-input="currentDateRangeEnd" value= {{instanceItem.currentDateRangeEnd}}>
+                            </span> 
+                        </div>
+                        
+                    </div>
+                    <div class="criteria top-row">
+                        <div class="title top-row">Criteria</div>
+                        <ul>
+                            <li id="groupingLogic">
+                                <label class="title">Grouping Logic</label>
+                                <input class="select2-group-logic" data-input="groupLogicName" placeholder="Nothing selected" value={{instanceItem.groupLogicName}} />
+                            </li>
+                            <li id="operator">
+                                <label class="title">Operator</label>
+                                <input class="" data-input="operator" value= "{{instanceItem.operator}}" placeholder="Nothing selected" />
+                            </li>
+                            <li id="value">
+                                <label class="title">Value</label>
+                                <input type="text" data-input="value" value= {{instanceItem.value}}>
+                            </li>
+                            <!-- if(instanceItem.fileHeader) { -->
+                                <li id = "file">
+                                    <label class="title">File</label>
+                                    <button style="" data-input="{{instanceItem.value}}" id="showFileData" value="Show File" >Show File</button>
+                                    <!--button id="editFileData" style="font-size: 8pt;">Show Data</button-->
+                                </li>
+                            <!-- } -->
+                            <li id="email">
+                                <label class="title">E-mail</label>
+                                <input type="email" data-input="emailId" value= {{instanceItem.emailId}}>
+                            </li>
+                            <li id="ruleTime">
+                                <label class="title">Rule Time</label>
+                                <input  class="" data-input="ruleTime" placeholder="Nothing selected" value={{instanceItem.ruleTime}}>
+                            </li>
+                        </ul>
+                        <div id="fileDataList" style="padding: 0px 40px;width:100%!important;"></div>
+                    </div>
+                     <div class="comments-continer top-row">
+                        <!-- _.each(notificationItem.notificationActivity, function(item) { -->
+                            <div class="comment-box">
+                                <span class="updated-by inline-title">{{item.updatedBy}}</span>
+                                <span class="updated-on inline-title">{{item.updatedOn}}</span>
+                                <div class="comment">{{item.comment}}</div>
+                            </div>
+                        <!-- }); -->
+                        <div class="comment-box">
+                            <div class="updated-by inline-title">{{userDetails.email}}</div>
+                            <textarea class="comment" placeholder="enter your comment here"></textarea>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="modal-footer">
+                    <!-- if(notificationItem.status == "ASSIGNED" &&  notificationItem.createdBy == userDetails.email)  { -->
+                        <button type="button" id="saveChanges" data-status="REVIEWED" class="btn btn-primary">Review</button>
+                    <!-- }  -->
+                    <!-- if((notificationItem.status == "ASSIGNED") && (notificationItem.assignedTo == userDetails.email))  { -->
+                        <button type="button" id="saveChanges" data-status="SUBMITTED" class="btn btn-primary">Submit</button>
+                    <!-- } -->
+                    <!-- if((notificationItem.status == "SUBMITTED") && (notificationItem.createdBy == userDetails.email))  { -->
+                        <button type="button" id="saveChanges" data-status="REVIEWED" class="btn btn-primary">Review</button>
+                    <!-- } -->
+                    <button type="button" id="closeBtn" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    <!--/div>
+</div-->

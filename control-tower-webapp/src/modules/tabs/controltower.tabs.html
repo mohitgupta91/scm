@@ -1,0 +1,9 @@
+<div class="controltower-tabs">
+    <ul>
+        <!-- for(var i in data.tabs){ -->
+            <li class="{{data.tabs[i].selected ? 'active' : ''}}">
+                <a jqr-go href="{{data.context}}/{{data.tabs[i].name}}" matrix>{{data.tabs[i].label}}</a>
+            </li>
+        <!-- } -->
+    </ul>
+</div>

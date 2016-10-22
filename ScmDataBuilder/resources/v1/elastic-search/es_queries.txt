@@ -1,0 +1,21 @@
+#disbale analysis of fields to save space and cpu processing
+
+curl -XPUT localhost:9200/scm_master -d '{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 10,
+            "number_of_replicas" : 1,
+           "analysis" : {
+            "analyzer" : {
+                "default" : {
+                    "type" : "keyword"
+                }
+            }
+           }
+        }
+    }
+}'
+
+#curl to enable timestamp in suborder details table
+
+curl -XPUT 'http://localhost:9200/scm_master/suborder_details/_mapping' -d '{"suborder_details": {"_ttl": {"enabled": true, "default": "90d"}}}'

@@ -1,0 +1,21 @@
+<div class="controltower-sidebar">
+    <nav class="controltower-nav">
+        <ul>
+            <!-- for(var i in data.tabs){ -->
+            <li class="{{ data.tabs[i].selected ? 'active' : ''}}">
+                <a>
+                    <div class="glyphicon glyphicon-{{data.tabs[i].icon}}" aria-hidden="true"></div>
+                    </a>
+                <ul>
+                	<li class="title"><span>{{data.tabs[i].label}}</span></li>
+                    <!-- for(var j in data.tabs[i].tabs){ -->
+                        <li class="{{ data.tabs[i].tabs[j].selected ? 'active' : ''}}">
+                            <a jqr-go href="/controltower/{{data.tabs[i].name}}/{{data.tabs[i].tabs[j].name}}">{{data.tabs[i].tabs[j].label}}</a>
+                        </li>
+                    <!-- } -->
+                </ul>
+            </li>
+            <!-- } -->
+        </ul>
+    </nav>
+</div>

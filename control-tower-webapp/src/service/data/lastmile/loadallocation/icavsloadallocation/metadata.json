@@ -1,0 +1,164 @@
+{
+	"ONE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "Count"
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "max",
+					"dataList": [],
+					"yAxis": 1
+				}, {
+					"type": "column",
+					"name": "min",
+					"dataList": [],
+					"yAxis": 1
+				}, {
+					"type": "column",
+					"name": "current",
+					"dataList": [],
+					"yAxis": 1
+				}
+			],
+			"generatedTime": "Time"
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		}
+	},
+	"TWO": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "Count"
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "max",
+					"dataList": [],
+					"yAxis": 1
+				}, {
+					"type": "column",
+					"name": "min",
+					"dataList": [],
+					"yAxis": 1
+				}, {
+					"type": "column",
+					"name": "current",
+					"dataList": [],
+					"yAxis": 1
+				}
+			],
+			"generatedTime": "Time"
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		}
+	},
+	"THREE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": "Count"
+			}
+		],
+		"requestValueType": "category",
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "max",
+					"dataList": [],
+					"yAxis": 1
+				}, {
+					"type": "column",
+					"name": "min",
+					"dataList": [],
+					"yAxis": 1
+				}, {
+					"type": "column",
+					"name": "current",
+					"dataList": [],
+					"yAxis": 1
+				}
+			],
+			"generatedTime": "Time"
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "L1",
+			"id": "ONE"
+		}, {
+			"name": "L2",
+			"id": "TWO"
+		},{
+			"name": "L3",
+			"id": "THREE"
+		}
+	]
+}

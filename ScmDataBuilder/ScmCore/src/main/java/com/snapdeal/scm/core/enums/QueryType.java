@@ -1,0 +1,35 @@
+package com.snapdeal.scm.core.enums;
+
+import java.io.Serializable;
+
+/**
+ * @author prateek
+ */
+public enum QueryType implements Serializable {
+
+    GENERIC_JOB_NAME,
+    FIRST_PROCESSOR,
+    
+    SHIPPING_SOI_SD,
+    SHIPPING_SOI_SOID,
+    SHIPPING_SOI_SP,
+    
+    COURIER_GROUP,
+    CENTER_MASTER,
+    VENDOR_CONTACT,
+    PINCODE_MASTER,
+    PINCODE_DC_MAPPING,
+    ORIGIN_CITY_EXIT_MAPPING,
+    COURIER_LOCATION_SNAPDEAL_LOCATION_MAPPING,
+    
+    SUB_ORDER_SP_STATUS_CODES,
+    SUB_ORDER_TP_STATUS_CODES,
+    SUB_ORDER_SOI_STATUS_CODES,
+    
+    CAMS_SUPC_SUPER_CATEGORY,
+    FILMS_SUPC_MTO,
+    LANE_GROUP,
+    METRO_CITY,
+    CUSTOMER_CASE_RETURN_REFUND;
+
+}

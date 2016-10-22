@@ -1,0 +1,67 @@
+diff --git a/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG21.java b/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG21.java
+index 940dc7e..646066b 100644
+--- a/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG21.java
++++ b/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG21.java
+@@ -13,7 +13,6 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
+ import org.springframework.boot.test.WebIntegrationTest;
+ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+ 
+-import com.google.common.collect.ImmutableMap;
+ import com.snapdeal.scm.web.ConfigurationScmWebApp;
+ import com.snapdeal.scm.web.core.enums.Metric;
+ import com.snapdeal.scm.web.core.request.SearchRequest;
+@@ -73,10 +72,10 @@ public class TestMetricDataServiceG21 {
+         }));
+         request.setOptions(Collections.unmodifiableMap(new HashMap<String, String>() {
+         		{
+-                	put("predeliverycomplaintorigin", "ONESHIP");
++                	put("predeliverycomplaintorigin", "predeliverycomplaintorigin");
+         		}	
+         	}));
+-        request.setStage("ONE");
++        request.setStage("WO");
+ 
+         Metric metric = Metric.COMPLAINTS_PRE_DELIVERY;
+ 
+diff --git a/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG3.java b/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG3.java
+index cf728eb..bb2f38a 100644
+--- a/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG3.java
++++ b/ScmWeb/ScmWebApp/src/test/java/com/snapdeal/scm/web/test/TestMetricDataServiceG3.java
+@@ -73,7 +73,7 @@ public class TestMetricDataServiceG3 {
+         }));
+         request.setOptions(Collections.unmodifiableMap(new HashMap<String, String>() {
+             {
+-                put("category", "percentage_delivered_after_eddr");
++                put("prede", "percentage_delivered_after_eddr");
+             }
+         }));
+         request.setStage("TWO");
+diff --git a/ScmWeb/ScmWebCore/src/main/java/com/snapdeal/scm/web/core/enums/Metric.java b/ScmWeb/ScmWebCore/src/main/java/com/snapdeal/scm/web/core/enums/Metric.java
+index 012abfe..6c82f4a 100644
+--- a/ScmWeb/ScmWebCore/src/main/java/com/snapdeal/scm/web/core/enums/Metric.java
++++ b/ScmWeb/ScmWebCore/src/main/java/com/snapdeal/scm/web/core/enums/Metric.java
+@@ -23,15 +23,10 @@ public enum Metric {
+     UD_MONITORING                       ("currentundeliveredpendency", "shiptodeliver", "lastmile", "G10", 10),
+     LAST_MILE_RTO_INITIATED_COUNT       ("rtoinitiatedcountdaywise", "rto", "lastmile", "G38", 38),
+     LAST_MILE_RTO_PERCENTAGE            ("rtopercentage", "rto", "lastmile", "G39", 39),
+-<<<<<<< Updated upstream
+-    LAST_MILE_RTO_PENDENCY              ("rtopendency","rto","lastmile","G40",40);
+-
+-=======
+     LAST_MILE_RTO_PENDENCY              ("rtppendency","rto","lastmile","G40",40),
+     COMPLAINTS_PRE_DELIVERY				("complaintspredelivery","complaints","complaints","G21",21),
+     COMPLAINTS_POST_DELIVERY			("complaintspostdelivery","complaints","complaints","G22",22);
+     
+->>>>>>> Stashed changes
+     private String code;
+     private String submodule;
+     private String module;
+@@ -113,7 +108,7 @@ public enum Metric {
+         metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PERCENTAGE, Stage.FIVE, OptionKey.DESTINATION_CITY);
+ 
+         metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PENDENCY, Stage.ONE, OptionKey.CATEGORY);
+-        metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PENDENCY, Stage.TWO, OptionKey.RTO_STATES);
++        metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PENDENCY, Stage.TWO, OptionKey.RTOSTATES);
+         metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PENDENCY, Stage.THREE, OptionKey.MULTIPLE);
+         metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PENDENCY, Stage.FOUR, OptionKey.MULTIPLE);
+         metricStageOptionMapping.put(Metric.LAST_MILE_RTO_PENDENCY, Stage.FIVE, OptionKey.LANE);

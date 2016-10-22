@@ -1,0 +1,99 @@
+use scm;
+db.web_role_permissions.insert([
+{
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.RolePermissions",
+	"role" : "linehaul_managers",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+},
+{
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.RolePermissions",
+	"role" : "quick_executives",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+},
+{
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.RolePermissions",
+	"role" : "quick_managers",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+},
+{
+	"role" : "cam_executives",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+},
+{
+	"role" : "cam_managers",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+},
+{
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.RolePermissions",
+	"role" : "surface_executives",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+},
+{
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.RolePermissions",
+	"role" : "surface_managers",
+	"permissions" : [
+		"/lastmile/shiptodeliver/avgo2sperformanceshipped",
+		"/lastmile/shiptodeliver/avgo2dperformancedelivered",
+		"/lastmile/shiptodeliver/deliveryadherance",
+		"/lastmile/shiptodeliver/attemptadherance",
+		"/lastmile/shiptodeliver/percentagedeliveredperformance",
+		"/lastmile/shiptodeliver/s2dpendencytrend",
+		"/lastmile/shiptodeliver/percentageattemptperformance"
+	],
+	"created" : new Date()
+}
+]);

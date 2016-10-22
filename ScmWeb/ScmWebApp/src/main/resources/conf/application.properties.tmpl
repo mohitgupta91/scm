@@ -1,0 +1,59 @@
+#Security
+server.ssl.key-store=classpath:sd.jks
+server.ssl.key-store-password=snapdeal
+#server.ssl.protocol=TLS
+server.port =<%= @scm_ssl_port %>
+scm.httpport=<%= @scm_http_port %>
+security.basic.enabled=false
+scm.sso.enabled=true
+sacs.webservice.base.url=<%= @sacs_webservice_base_url %>
+sacs.webservice.scm.id=control-tower
+#scm.inmemory.credentials=admin/admin/ADMIN,admin1/admin1/ADMIN1
+
+##MONGODB (MongoProperties)
+spring.data.mongodb.repositories.enabled=true
+#mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+spring.data.mongodb.uri=<%=@spring_data_mongodb_uri%>
+
+##Elastic Search
+scm.elastic.host.port=<%= @scm_elastic_host_port %>
+scm.elastic.index.name=scm_master
+scm.elastic.clustername=<%=@scm_elastic_clustername %>
+scm.elastic.index.name.type=suborder_details
+
+#cache reload
+#auto.cache.reload.cron=0 0 0/6 * * ?
+auto.cache.reload.cron=<%=@auto_cache_reload_cron %>
+
+logging.level.org.springframework.web=INFO
+logging.logger.org.springframework.security=INFO
+
+#this will be picked directly from classpath
+logging.config=classpath:logback-spring.xml
+
+logging.path=<%=@logging_path%>
+
+server.tomcat.accesslog.directory=<%=@logging_path%>
+server.tomcat.accesslog.enabled=true
+server.tomcat.accesslog.pattern=common
+server.tomcat.accesslog.prefix=access_log
+server.tomcat.accesslog.suffix=.log
+
+management.health.elasticsearch.enabled=false
+
+#ScmJmsProducer
+scm.jms.producer.max.attempts=<%=@scm_jms_producer_max_attempts %>
+scm.jms.producer.retry.delay.in.ms=<%=@scm_jms_producer_retry_delay_in_ms %>
+scm.jms.producer.exponential.backoff=<%=@scm_jms_producer_exponential_backoff %>
+scm.jms.producer.backoff.multiplier=<%=@scm_jms_producer_backoff_multiplier%>
+scm.jms.producer.max.delay.in.ms=<%=@scm_jms_producer_max_delay_in_ms%>
+##JMS
+spring.activemq.broker-url=<%=@spring_activemq_broker_url %>
+spring.activemq.user=<%=@spring_activemq_user%>
+spring.activemq.password=<%=@spring_activemq_password %>
+
+#Mongo Connection settings
+scm.mongodb.socketTimeoutMS=<%=@scm_mongodb_socketTimeoutMS%>
+scm.mongodb.connectionTimeoutMS=<%=@scm_mongodb_connectionTimeoutMS%>
+scm.mongodb.connectionPerHost=<%=@scm_mongodb_connectionPerHost%>
+

@@ -1,0 +1,10 @@
+use scm; 
+db.poller_property.insert(
+   [
+     	{ "_class" : "com.snapdeal.scm.poller.model.PollerProperty", name: "externalAPIURL", value: "http://54.169.200.213:8080/get/getAllExpressionOutput?expressionId=%s&startTimeStamp=%s&endTimeStamp=%s", created: new Date(), updated: new Date() },
+     	{ "_class" : "com.snapdeal.scm.poller.model.PollerProperty", name: "delayStorage", value: "300000", created: new Date(), updated: new Date() },
+     	{ "_class" : "com.snapdeal.scm.poller.model.PollerProperty", name: "restReadTimeout", value: "60000", created: new Date(), updated: new Date() },
+     	{ "_class" : "com.snapdeal.scm.poller.model.PollerProperty", name: "restConnectTimeout", value: "1800000", created: new Date(), updated: new Date() }
+     	
+   ]
+);

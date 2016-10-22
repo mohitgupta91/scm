@@ -1,0 +1,1 @@
+db.connected_rad_status.createIndex({"subOrderCode" : 1},{"name":"scm_subOrderCode","unique" : true})

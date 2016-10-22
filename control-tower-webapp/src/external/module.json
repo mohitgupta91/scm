@@ -1,0 +1,21 @@
+{
+  "name": "external",
+  "external/datatable": {
+  	"on": ["webmodules/jquery", "webmodules/underscore"],
+    "css": [
+        "components/datatable-ct/media/css/dataTables.foundation.css",
+        "components/datatable-ct/media/css/jquery.dataTables.css",
+        "components/datatable-ct/media/css/datatable.min.css"
+    ],
+    "js": [
+        "components/datatable-ct/media/js/jquery.dataTables.min.js",
+        "components/datatable-ct/media/js/dataTables.foundation.min.js"
+    ]
+  },
+  "external/multiselectremote": {
+    "on": ["webmodules/jquery", "webmodules/underscore"],
+    "js": [
+      "multiselectremote/multiselectremote.js"
+    ]
+  }
+}

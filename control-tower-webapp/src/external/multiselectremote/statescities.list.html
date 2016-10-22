@@ -1,0 +1,52 @@
+<!-- if(data.search){data.filterListData = data.filterListData.filter(function(item){ console.log(item.val.toLowerCase());return item.val.toLowerCase().indexOf(data.search)> -1; })} -->
+<!-- for(var i=0; i<data.filterListData.length; i++){ console.log(data) -->
+<!--div class="top_line">
+        <span class="pull-left desc">{{data.filterName}}:</span>
+
+        <div class="pull-right form-group">
+            <input type="text" placeholder="Search" class="form-control search_cities">
+        </div>
+    </div>
+    <div class="clearfix"></div-->
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group city_item">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id={{data.filterListData[i]["val"]}} />
+                    <span class="checkbox-material"><span class="check"></span></span> {{data.filterListData[i]["val"]}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- i++; if(data.filterListData[i]){ -->
+    <div class="col-md-4">
+        <div class="form-group city_item">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id={{data.filterListData[i]["val"]}} />
+                    <span class="checkbox-material"><span class="check"></span></span> {{data.filterListData[i]["val"]}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- } -->
+    <!-- i++; if(data.filterListData[i]){ -->
+    <div class="col-md-4">
+        <div class="form-group city_item">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id={{data.filterListData[i]["val"]}} />
+                    <span class="checkbox-material"><span class="check"></span></span> {{data.filterListData[i]["val"]}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- } -->
+</div>
+<!-- } -->
+<!--div class="clearfix"></div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary save_destinations">Save changes</button>
+</div-->

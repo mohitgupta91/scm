@@ -1,0 +1,32 @@
+use scm;
+db.metric_details.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.MetricDetails",
+	"metricID" : "rtopercentage",
+	"filterKey" : {
+        "durationtype" : true,
+        "durationtype-startdate" : true,
+        "durationtype-enddate" : true,
+        "itemvalue" : false,
+        "fulfillmentmodel" : false,
+        "fulfillmentcenter" : false,
+        "lanetype" : false,
+        "originstate" : false,
+        "origincity" : false,
+        "metro" : false,
+        "destinationregion" : false,
+        "destinationstate" : false,
+        "destinationcity" : false,
+        "destinationtier" : false,
+        "mode" : false,
+        "couriergroup" : false,
+        "couriertype" : false,
+        "couriercode" : false,
+        "rtoreason" : false,
+        "paymentmode" : false,
+        "channelwise" : false,
+        "supercategory" : false,
+        "usertype" : false
+	},
+	"created" : new Date(),
+	"updated" : new Date()
+});

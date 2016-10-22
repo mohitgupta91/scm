@@ -1,0 +1,116 @@
+.controltower-sidebar {
+	font-size: 12px;
+}
+.controltower-nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.controltower-nav >ul >li {
+    height: 45px;
+    line-height: 43px;
+    cursor: pointer;
+    position: relative;
+    
+    .glyphicon{
+        width: 50px;
+        height: 100%;
+        float: left;
+        line-height: 43px;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+    }
+   
+    > a {
+    	color: inherit;
+      &:hover {
+	      color: #fb0229;
+      }
+    }
+     
+    &:hover > ul {
+        display: block;
+    }
+    &.active, &:hover{
+        background: #f9f7f8;
+        color: #fb0229;
+        -webkit-box-shadow:inset 2px 0 4px 0 #dcdcdc;
+        box-shadow:inset 2px 0 4px 0 #dcdcdc;
+        
+        span{
+            border-top-color: transparent;
+        }
+        
+        + li span{
+            border-top-color: transparent;
+        }
+        .glyphicon:after{
+            content:"";
+            height: 45px;
+            border-left: 2px solid #fb0229;
+            position: absolute;
+            left: 0;
+            top: -1px;
+        }
+    }
+        
+    span{
+        display: block;
+        float: left;
+        height: 45px;
+        width: calc(100% - 50px);
+        border-top: 1px solid #e5e5e5;
+    }
+    >ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background: #f9f7f8;
+        z-index: 1;
+        display: none;
+        li{
+            white-space: nowrap;
+            height: 40px;
+            line-height: 40px;
+            font-size: 12px;
+            a{
+                text-decoration: none;
+                display: block;
+                color: #333333;
+		            padding: 0 20px;
+            }
+            &:hover, a:hover{
+                color: #666666;
+                text-shadow: 0.5px 0px 0px #666666;
+            }
+            &.active a {
+            	color: #fb0229;
+              text-shadow: 0.5px 0px 0px #fb0229;
+            } 
+            &.title{
+            	cursor: default;
+                font-size: 14px;
+                /* font-weight: bold; */
+                padding: 0 20px;
+                color: #999;
+                /* border-bottom: 1px solid #ccc; */
+                line-height: 41px;
+                height: 45px;
+                -webkit-box-shadow: inset 0px 0 4px 0 #dcdcdc;
+                box-shadow: inset -2px 0 3px 0 #dcdcdc;
+                &:hover {
+	                font-size: 14px;
+	                font-weight: normal;
+	                text-shadow: none;
+                }
+            }
+        }
+    }
+}
+.controltower-nav ul >li:nth-child(1) span{
+    border-top-color: transparent;
+}
+

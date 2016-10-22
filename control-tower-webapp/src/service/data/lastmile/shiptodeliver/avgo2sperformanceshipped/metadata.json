@@ -1,0 +1,200 @@
+{
+	"ONE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "shippedcount",
+					"dataList": [],
+					"yAxis": 0
+				}, {
+					"type": "line",
+					"name": "order_to_shipped",
+					"dataList": [],
+					"yAxis": 1
+				}
+			]
+		}
+	},
+	"TWO": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": []
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"THREE": {
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": ""
+			}, {
+				"title": ""
+			}
+		],
+		"dataset": {
+			"series": [],
+			"generatedTime": " "
+		},
+		"seriesObj": {
+			"type": "line",
+			"name": "",
+			"dataList": [],
+			"yAxis": 0
+		}
+	},
+	"FOUR": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": true,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "Avg."
+			}, {
+				"title": "Count"
+			}
+		],
+		"requestValueType": "category", 
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "shippedcount",
+					"dataList": [],
+					"yAxis": 0
+				}, {
+					"type": "column",
+					"name": "order_to_shipped",
+					"dataList": [],
+					"yAxis": 1
+				}
+			],
+			"generatedTime": "Time"
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		}
+	},
+	"FIVE": {
+		"chart": {
+			"inverted": true
+		},
+		"datatable": false,
+		"clickableDatapoints": false,
+		"title": "",
+		"subtitle": "",
+		"xAxis": [
+			{
+				"title": "",
+				"labels": []
+			}
+		],
+		"yAxis": [
+			{
+				"title": "Avg."
+			}, {
+				"title": "Count"
+			}
+		],
+		"dataset": {
+			"series": [
+				{
+					"type": "column",
+					"name": "shippedcount",
+					"dataList": [],
+					"yAxis": 0
+				}, {
+					"type": "column",
+					"name": "order_to_shipped",
+					"dataList": [],
+					"yAxis": 1
+				}
+			],
+			"generatedTime": "Time"
+		},
+		"plotOptions": {
+			"column": {
+				"grouping": true,
+				"borderWidth": 0
+			}
+		}
+	},
+	"tabsInfo": [
+		{
+			"name": "avgo2sperformanceshipped.L1",
+			"id": "ONE"
+		}, {
+			"name": "avgo2sperformanceshipped.L2",
+			"id": "TWO"
+		}, {
+			"name": "avgo2sperformanceshipped.L3",
+			"id": "THREE"
+		}, {
+			"name": "avgo2sperformanceshipped.L4",
+			"id": "FOUR"
+		}, {
+			"name": "avgo2sperformanceshipped.L5",
+			"id": "FIVE"
+		}
+	]
+}

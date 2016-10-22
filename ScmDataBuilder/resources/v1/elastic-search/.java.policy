@@ -1,0 +1,5 @@
+grant {
+    permission org.elasticsearch.script.ClassPermission "java.lang.Class";
+    permission org.elasticsearch.script.ClassPermission "groovy.time.TimeCategory";
+    permission org.elasticsearch.script.ClassPermission "java.text.*";
+};

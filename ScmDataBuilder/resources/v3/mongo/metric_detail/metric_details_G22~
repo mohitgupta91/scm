@@ -1,0 +1,29 @@
+use scm;
+db.metric_details.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.MetricDetails",
+	"metricID" : "postdeliverycomplaints",
+	"filterKey" : {
+		"durationtype" : true,
+		"durationtype-startdate" : true,
+		"durationtype-enddate" : true,
+		"mode" : false,
+		"type" : false,
+		"metro" : false,
+		"deliverytype" : false,
+		"fulfillmentmodel" : false,
+		"lanetype" : false,
+		"lanegroup" : false,
+		"lane" : false,
+		"originstate" : false,
+		"origincity" : false,
+		"destinationregion" : false,
+		"destinationstate" : false,
+		"destinationcity" : false,
+		"destinationtier" : false,
+		"couriergroup" : false,
+		"couriertype" : false
+	},
+	"created" : new Date(),
+	"updated" : new Date()
+});
+

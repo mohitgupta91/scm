@@ -1,0 +1,212 @@
+use scm; 
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "durationtype",
+	"options" : [
+		"Daily",
+		"Weekly",
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "durationtype-startdate",
+	"type" : "date",
+	"range" : "90-0",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "durationtype-enddate",
+	"type" : "date",
+	"range" : "90-0",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "mode",
+	"options" : [
+		"Air",
+		"Surface"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "type",
+	"options" : [
+		"mto",
+		"non-mto"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "metro",
+	"options" : [
+		"metro",
+		"non-metro"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "deliverytype",
+	"options" : [
+		"STD",
+		"SDD",
+		"NDD",
+		"SDI",
+		"FMCG"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "fulfillmentmodel",
+	"options" : [
+		"DROPSHIP",
+		"VENDOR_SELF",
+		"ONESHIP",
+		"FC_VOI",
+		"O2O",
+		"OCPLUS"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "lanetype",
+	"options" : [
+		"same-city",
+		"metro",
+		"zone",
+		"roi"
+	],
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "lanegroup",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "lane",
+	"dependsOn" : "lanegroup",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "originstate",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "origincity",
+	"dependsOn" : "originstate",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "destinationregion",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "destinationstate",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "destinationcity",
+	"dependsOn" : "destinationstate",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "destinationtier",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "couriergroup",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "couriertype",
+	"type" : "singleselect",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "delivereddate",
+	"type" : "date",
+	"range" : "90-0",
+	"created" : new Date(),
+	"updated" : new Date()
+});
+
+db.filter_options.insert({
+	"_class" : "com.snapdeal.scm.web.core.mongo.documents.FilterOptions",
+	"filterKey" : "shippeddate",
+	"type" : "date",
+	"range" : "90-0",
+	"created" : new Date(),
+	"updated" : new Date()
+});
